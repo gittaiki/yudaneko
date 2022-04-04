@@ -51,6 +51,10 @@ group :development do
   gem 'binding_of_caller'
   # N+1問題を検知
   gem 'bullet'
+  # 構文規則チェック
+  gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
 end
 
 group :test do
