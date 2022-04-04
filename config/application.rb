@@ -21,5 +21,12 @@ module Yudaneko
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.generators do |g|
+      g.skip_routes true
+      g.assets false
+      g.helper false
+      g.test_framework false
+    end
   end
 end
