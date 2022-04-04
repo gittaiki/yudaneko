@@ -49,6 +49,8 @@ group :development do
   # エラー画面を整形
   gem 'better_errors'
   gem 'binding_of_caller'
+  # N+1問題を検知
+  gem 'bullet'
 end
 
 group :test do
