@@ -29,3 +29,6 @@
 - 名前：ゆだねこ
 - 好きなこと：委ねられること
 - 嫌いなこと：ダイエット
+
+## ER図
+https://drive.google.com/file/d/1XTtT-8zTtnYR9Nz8eb4XE-o5eIWCSqNc/view?usp=sharing
