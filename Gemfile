@@ -31,6 +31,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # erb→slim
 gem 'slim-rails'
 gem 'html2slim'
+# seedデータの管理
+gem 'seed-fu'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

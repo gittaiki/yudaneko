@@ -1,2 +1,2 @@
-h1 Troubles#index
-p Find me in app/views/troubles/index.html.slim
+- @troubles.each do |t|
+  = link_to t.content, '#'

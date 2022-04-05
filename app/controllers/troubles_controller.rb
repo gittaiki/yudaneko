@@ -1,3 +1,5 @@
 class TroublesController < ApplicationController
-  def index; end
+  def index
+    @troubles = Trouble.all
+  end
 end
