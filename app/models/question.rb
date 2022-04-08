@@ -6,4 +6,8 @@ class Question < ApplicationRecord
     validates :content
     validates :point
   end
+
+  def self.first_question(trouble)
+    where(trouble_id: trouble.id).sample
+  end
 end

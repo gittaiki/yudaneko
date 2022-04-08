@@ -1,0 +1,4 @@
+h1 質問ページ
+= @question.content
+br
+= link_to 'はい', result_path(id: @question.result_id, question_id: @question.id)
