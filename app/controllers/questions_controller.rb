@@ -11,7 +11,7 @@ class QuestionsController < ApplicationController
 
     @asks = JSON.parse(params[:asks])
 
-    @question = Question.where(trouble_id: @trouble.id).where.not(id: @asks).sample
+    @question = Question.next_question(@trouble, @asks)
     if @question.present?
       @asks << @question.id
     else
