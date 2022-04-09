@@ -10,4 +10,8 @@ class Question < ApplicationRecord
   def self.first_question(trouble)
     where(trouble_id: trouble.id).sample
   end
+
+  def self.next_question(trouble, question_ids)
+    where(trouble_id: trouble.id).where.not(id: question_ids).sample
+  end
 end

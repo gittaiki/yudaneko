@@ -2,3 +2,7 @@ h1 質問ページ
 = @question.content
 br
 = link_to 'はい', result_path(id: @question.result_id, question_id: @question.id)
+br
+= form_with url: trouble_question_path(trouble_id: @trouble.id, id: @question.id), method: :get, local: true do |f|
+  = f.hidden_field :asks, value: @asks.to_json
+  = f.submit 'いいえ'
