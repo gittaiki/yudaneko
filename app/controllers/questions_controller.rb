@@ -15,7 +15,7 @@ class QuestionsController < ApplicationController
     if @question.present?
       @asks << @question.id
     else
-      redirect_to cannot_path
+      redirect_to cannot_results_path
     end
   end
 end
