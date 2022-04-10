@@ -1,6 +1,6 @@
 h1 診断選択ページ
 / = render @troubles
 / = link_to trouble.content, question_path(trouble_id: trouble.id)
-= link_to @buy_trouble.content, trouble_question_path(trouble_id: @buy_trouble.id, id: @buy_question.id)
+= link_to @buy_trouble.content, trouble_question_path(trouble_id: @buy_trouble.id, id: @buy_question.id), class:"btn btn-red"
 br
-= link_to @eat_trouble.content, trouble_question_path(trouble_id: @eat_trouble.id, id: @eat_question.id)
+= link_to @eat_trouble.content, trouble_question_path(trouble_id: @eat_trouble.id, id: @eat_question.id), class:"btn btn-red"
