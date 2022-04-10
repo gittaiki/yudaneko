@@ -1,6 +1,5 @@
-h1 診断結果ページ
-= @result.content
-br
-= @reason.point
-br
-= link_to 'もう一度する', root_path, class:"btn btn-red"
+h1.py-4.fw-bolder ゆだねこの判断は・・
+h1.mb-4.fw-bolder 『#{@result.content}！』
+= image_tag 'cat-04.png', class: "img-size"
+h5.my-5 #{@reason.point}にゃ！
+= link_to 'もう一度する', root_path, class: "btn btn-orange mb-5"

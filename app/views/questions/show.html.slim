@@ -1,8 +1,10 @@
-h1 質問ページ
-= @question.content
-br
-= link_to 'はい', result_path(id: @question.result_id, question_id: @question.id), class:"btn btn-red"
-br
-= form_with url: trouble_question_path(trouble_id: @trouble.id, id: @question.id), method: :get, local: true do |f|
-  = f.hidden_field :asks, value: @asks.to_json
-  = f.submit 'いいえ', class:"btn btn-outline-red"
+h1.py-4.fw-bolder ゆだねこからの質問
+= image_tag 'cat-02.png', class: "img-size"
+h5.mt-5 #{@question.content}？
+.row.justify-content-center.mt-5.pb-5
+  .col-3
+    = link_to 'はい', result_path(id: @question.result_id, question_id: @question.id), class: "btn btn-orange"
+  .col-3
+    = form_with url: trouble_question_path(trouble_id: @trouble.id, id: @question.id), method: :get, local: true do |f|
+      = f.hidden_field :asks, value: @asks.to_json
+      = f.submit 'いいえ', class: "btn btn-outline-orange"

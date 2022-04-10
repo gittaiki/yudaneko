@@ -11,5 +11,6 @@ html
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
   body.gothic
     = render 'shared/header'
-    = yield
+    .container-fluid.text-center.bg-color
+      = yield
     = render 'shared/footer'
