@@ -2,10 +2,10 @@ footer.footer.bg-yellow style="height:140px;"
   .container-fluid
     .row.justify-content-around
       .col-sm-4.text-center.mt-2
-        = link_to '利用規約', '#', class: "text-decoration-none text-muted"
+        = link_to '利用規約', terms_path, class: "text-decoration-none text-muted"
       .col-sm-4.text-center.mt-2
-        = link_to 'プライバシーポリシー', '#', class: "text-decoration-none text-muted"
+        = link_to 'プライバシーポリシー', policy_path, class: "text-decoration-none text-muted"
       .col-sm-4.text-center.mt-2
-        = link_to 'お問い合わせ', '#', class: "text-decoration-none text-muted", target: :_blank, rel: "noopener noreferrer"
+        = link_to 'お問い合わせ', 'https://forms.gle/JhL6oSYz8ijDk6Fj6', class: "text-decoration-none text-muted", target: :_blank, rel: "noopener noreferrer"
     .text-center.mt-2
       p.text-muted © 2022 ゆだねこ診断
