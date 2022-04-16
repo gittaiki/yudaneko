@@ -33,6 +33,8 @@ gem 'slim-rails'
 gem 'html2slim'
 # seedデータの管理
 gem 'seed-fu'
+# metaタグの設定
+gem 'meta-tags'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
