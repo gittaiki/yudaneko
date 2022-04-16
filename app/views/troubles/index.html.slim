@@ -1,6 +1,9 @@
-h1 診断選択ページ
-/ = render @troubles
-/ = link_to trouble.content, question_path(trouble_id: trouble.id)
-= link_to @buy_trouble.content, trouble_question_path(trouble_id: @buy_trouble.id, id: @buy_question.id)
+h1.py-4.fw-bolder ゆだねこ診断
+= image_tag 'cat-01.png', class: "img-size"
+h5.my-4 2択で迷っているとき、僕にゆだねると<br>どちらか判断するにゃ！
+= link_to @buy_trouble.content, trouble_question_path(trouble_id: @buy_trouble.id, id: @buy_question.id), class: "btn btn-orange"
 br
-= link_to @eat_trouble.content, trouble_question_path(trouble_id: @eat_trouble.id, id: @eat_question.id)
+= link_to @eat_trouble.content, trouble_question_path(trouble_id: @eat_trouble.id, id: @eat_question.id), class: "btn btn-orange mt-4"
+h4.mt-5 ゆだねことは
+p ゆだねられることが好きな猫です。<br>ダイエットは苦手です。
+= image_tag 'cat-03.png', class: "img-size pb-5"

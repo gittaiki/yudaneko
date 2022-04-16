@@ -1,0 +1,25 @@
+@import "bootstrap";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+
+@import "questions.scss";
+@import "shared.scss";
+@import "results.scss";
+
+.btn-orange {
+  color: #fff;
+  background-color: #F4B757;
+  border-color: #F4B757;
+}
+
+.gothic {
+  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
+}
+
+body {
+  background-color:#FEF6E0;
+}
+
+.img-size {
+  width: 50%;
+  height: auto;
+}
