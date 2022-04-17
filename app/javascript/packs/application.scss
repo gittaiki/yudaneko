@@ -1,9 +1,8 @@
 @import "bootstrap";
-@import "@fortawesome/fontawesome-free/scss/fontawesome";
 
-@import "questions.scss";
-@import "shared.scss";
-@import "results.scss";
+@import "../stylesheets/questions.scss";
+@import "../stylesheets/shared.scss";
+@import "../stylesheets/results.scss";
 
 .btn-orange {
   color: #fff;
