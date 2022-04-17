@@ -1,8 +1,8 @@
 h1.py-4.fw-bolder ゆだねこの判断は・・
 h1.mb-4.fw-bolder 『#{@result.content}！』
 = image_tag 'cat-04.png', class: "img-size"
-h5.my-5 #{@reason.point}にゃ！
-= link_to "https://twitter.com/share?url=#{request.url}/&text=#{@reason.trouble.content}、ゆだねこに委ねた結果%0a%0a『#{@result.content}方が良い』と判断されました！%0a%0a⬇判断理由はこちら⬇%0a&hashtags=ゆだねこ診断", target: '_blank', rel: 'noopener noreferrer', class: "btn btn-tweet mb-5" do
+h5.my-4 #{@reason.point}にゃ！
+= link_to "https://twitter.com/share?url=#{request.url}/&text=#{@reason.trouble.content}、ゆだねこに委ねた結果%0a%0a『#{@result.content}方が良い』と判断されました！%0a%0a⬇判断理由はこちら⬇", target: '_blank', rel: 'noopener noreferrer', class: "btn btn-tweet mb-4" do
   i.fa-brands.fa-twitter.fa-lg
   | &nbsp;&nbsp;結果をシェア
 br

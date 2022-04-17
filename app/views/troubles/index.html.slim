@@ -1,6 +1,5 @@
-h1.py-4.fw-bolder ゆだねこ診断
-= image_tag 'cat-01.png', class: "img-size"
-h5.my-4 2択で迷っているとき、僕にゆだねると<br>どちらか判断するにゃ！
+= image_tag 'cat-01.png', class: "img-size py-4"
+h5.my-4 2択で迷ったとき、僕にゆだねると<br>どちらか判断するにゃ！
 = link_to @buy_trouble.content, trouble_question_path(trouble_id: @buy_trouble.id, id: @buy_question.id), class: "btn btn-orange"
 br
 = link_to @eat_trouble.content, trouble_question_path(trouble_id: @eat_trouble.id, id: @eat_question.id), class: "btn btn-orange mt-4"

@@ -1,4 +1,6 @@
 header
   nav.navbar.navbar-light.bg-yellow
     .container-fluid
-      = link_to '🐾 ゆだねこ診断', root_path, class: "navbar-brand"
+      .row.align-items-center
+        = link_to root_path, class: "col-auto mx-2 p-0" do
+          = image_tag 'logo.png', class: "logo-size"
