@@ -9,6 +9,9 @@ html
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     / meta-tags
     = display_meta_tags(default_meta_tags)
+    / googleアナリティクス
+    - if Rails.env.production?
+      = render 'layouts/google_analytics'
   body.gothic
     = render 'shared/header'
     .container-fluid.text-center
